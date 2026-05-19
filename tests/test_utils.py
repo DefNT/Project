@@ -11,7 +11,7 @@ class TestUtils(unittest.TestCase):
         valid, val=validate_score(150)
         self.assertFalse(valid)
 
-    def test_validtae_not_empty(self):
+    def test_validate_not_empty(self):
         self.assertTrue(validate_not_empty("Hello"))
         self.assertFalse(validate_not_empty(" "))
 
