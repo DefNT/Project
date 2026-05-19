@@ -272,6 +272,33 @@ class Application:
         for g in grades: dist[g.letter] += 1
         print(f"Distribution: A:{dist['A']} B:{dist['B']} C:{dist['C']} D:{dist['D']} F:{dist['F']}")
 
+    def _analytic_menu(self):
+        while True:
+            os.system('cls' if os.name=='nt' else 'clear')
+            print("==== Analytics ===")
+            print("[1] Top students")
+            print("[2] Hall of Fame (Gpa>=90)")
+            print("[3] Failing students")
+            print("[4] Full report")
+            print("[5] Export report ro JSON")
+            print("[6] Export grades to CSV")
+            print("[0] Back\n")
+            choice = input("Choice: ").strip()
+
+            if choice == "1":
+                print("\n=== TOP STUDENTS (by weighted GPA) ===\n")
+                limit_str = input("How many? (default 5):")
+                limit = int(limit_str) if limit_str.isdigit() else 5
+                top =self.report_service.get_top_students(limit)
+                print(f"\n{'Rank' :<5 } {'Name':<20} {'Major':<17} {'W.GPA'}")
+                print("-" *50)
+                for i, (s,g) in enumerate(top, 1):
+                    print(f"{i:<5} {s.name:<20} {s.major:<17} {g:.1f}")
+                print()
+                self.pause()
+            elif choice =="2":        
+
+
 if __name__=="__main__":
     app=Application()
     app.run()       
