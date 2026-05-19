@@ -202,6 +202,75 @@ class Application:
             c_cred = course.credits if course else 3
             print(f"{g.course_id:<10} {c_name:<23} {c_cred:<3} {g.score:<5.1f} {g.letter}")
 
+    def _course_menu(self):
+        while True:
+            os.system('cls' if os.name == 'nt' else 'clear')
+            print("=== COURSES ===\n")
+            print("[1] List all courses")
+            print("[2] Add a course")
+            print("[3] View course stats")
+            print("[0] Back\n")
+
+            choice = input("Choice: ").strip()
+
+            if choice == "1":
+                print("\n=== ALL COURSES ===\n")
+                print(f"{'Code':<10} {'Name':<25} {'Credits':<7} {'Students'}")
+                print("-" * 52)
+                for c in self.course_service.get_all():
+                    enrolled = len([g for g in self.grade_service.grades if g.course_id == c.course_id])
+                    print(f"{c.course_id:<10} {c.name:<25} {c.credits:<7} {enrolled}")
+                print()
+                self.pause()
+
+            elif choice == "2":
+                print("\n === ADD COURSE ===\n")
+                cid = input("Course code(e.g. CS101): ")
+                name = input("Course name: ")
+                credits = input("Course credits (1-10): ")
+                instructor = input("Course instructor: ")
+                if validate_not_empty(cid) and validate_not_empty(name):
+                    try:
+                        self.course_service.add_course(cid, name, credits, instructor)
+                        print(f"\nCourse '{cid} - {name}' added!\n")
+                    except Exception as e:
+                        print(f"\nError: {e}\n")
+                else:
+                    print("\nError: Invalid input\n")
+                self.pause()
+            elif choice == "3":
+                print("\n=== COURSE STATS ===\n")
+                cid = input("Course code: ")
+                self._course_stats(cid)
+                print()
+                self.pause()
+            elif choice == "0":
+                break
+
+    def _course_stats(self, cid):
+        c = self.course_service.courses.get(cid)
+        if not c:
+            print("Error: Course not found")
+            return
+        grades = [g for g in self.grade_service.grades if g.course_id == cid]
+        print(f"\nCourse: {cid}")
+        print(f"Students: {len(grades)}")
+        if not grades: return
+
+        scores = sorted([g.score for g in grades])
+        mean = sum(scores) / len(scores)
+        median = scores[len(scores)//2] if len(scores) % 2 != 0 else (scores[len(scores)//2 - 1] + scores[len(scores)//2])/2.0
+        passing = len([s for s in scores if s >= 60])
+        pass_rate = (passing/len(scores)) * 100
+
+        print(f"Mean: {mean:.1f}")
+        print(f"Median: {median:.1f}")
+        print(f"Min: {scores[0]:.1f} Max: {scores[-1]:.1f}")
+        print(f"Pass rate: {pass_rate:.1f}%\n")
+
+        dist = {'A':0, 'B':0, 'C':0, 'D':0, 'F':0}
+        for g in grades: dist[g.letter] += 1
+        print(f"Distribution: A:{dist['A']} B:{dist['B']} C:{dist['C']} D:{dist['D']} F:{dist['F']}")
 
 if __name__=="__main__":
     app=Application()
