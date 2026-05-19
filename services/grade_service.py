@@ -8,6 +8,8 @@ class GradeService:
         for g in self.grades:
             if g.student_id==sid and g.course_id==cid:
                 raise ValueError("Grade already exists")
+            if score<=0 or score>=100:
+                raise ValueError("Score must be between 0 and 100")
         self.grades.append(GradeRecord(sid,cid,score,comment))
 
     def update_grade(self,sid,cid,score):
