@@ -1,0 +1,7 @@
+student_id,course_id,score,comment
+S1,CS101,95.0,
+S1,MATH101,88.0,
+S2,MATH101,70.0,
+S2,PHYS101,65.0,
+S3,PHYS101,92.0,
+S3,CS101,55.0,
