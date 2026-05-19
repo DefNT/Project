@@ -1,7 +1,7 @@
 import unittest
-from models.user import User, student, Student
 from models.course import Course
 from models.grade import GradeRecord
+from models.user import Student
 
 class TestModels(unittest.TestCase):
     def test_student_inheritance(self):
@@ -11,7 +11,7 @@ class TestModels(unittest.TestCase):
         self.assertIn("Student", s.display_info())
 
     def test_course_inheritance(self):
-        C = Course("C1", "Math", 4, "Dr. Smith")
+        c = Course("C1", "Math", 4, "Dr. Smith")
         self.assertEqual(c.instructor, "Dr.Smith")
 
     def test_grade_logic(self):
