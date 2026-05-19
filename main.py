@@ -62,22 +62,47 @@ class Application:
         try:
             students=FileHandler.read_csv("data/students.csv")
             for s in students:
-                try: self.student_service.add_student(s['student_id'], s['name'], s.get('email', ''), s['major'])
-                except: pass
-        except: pass
+                try:
+                    self.student_service.add_student(
+                        s['student_id'],
+                        s['name'],
+                        s.get('email', ''),
+                        s.get('major', '')
+                    )
+                except Exception as e:
+                    pass
+        except FileNotFoundError:
+            pass
+
         try:
             courses=FileHandler.read_csv("data/courses.csv")
             for c in courses:
-                try: self.course_service.add_course(c['course_id'], c['name'], c['credits'], c.get('instructor', ''))
-                except: pass
-        except: pass
+                try:
+                    self.course_service.add_course(
+                        c['course_id'],
+                        c['name'],
+                        c['credits'],
+                        c.get('instructor', '')
+                    )
+                except Exception as e:
+                    pass    
+        except FileNotFoundError:
+            pass
+
         try:
             grades=FileHandler.read_csv("data/grades.csv")
             for g in grades:
-                try: self.grade_service.assign_grade(g['student_id'], g['course_id'], g['score'], g.get('comment', ''))
-                except: pass
-        except: pass
-
+                try:
+                    self.grade_service.assign_grade(
+                        g['student_id'],
+                        g['course_id'],
+                        g['score'],
+                        g.get('comment', '')
+                    )        
+                except Exception as e:
+                    pass
+        except FileNotFoundError:
+            pass            
     #Saving Csv
     def save_data(self):
         students_data=[{"student_id": s.user_id, "name": s.name, "email": s.email, "major": s.major} for s in self.student_service.get_all()]
