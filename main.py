@@ -375,7 +375,7 @@ class Application:
                 limit_str = input("How many? (default 5):")
                 limit = int(limit_str) if limit_str.isdigit() else 5
                 top =self.report_service.get_top_students(limit)
-                print(f"\n{'Rank' :<5 } {'Name':<20} {'Major':<17} {'W.GPA'}")
+                print(f"\n{'Rank':<5 } {'Name':<20} {'Major':<17} {'W.GPA'}")
                 print("-" *50)
                 for i, (s,g) in enumerate(top, 1):
                     print(f"{i:<5} {s.name:<20} {s.major:<17} {g:.1f}")
