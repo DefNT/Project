@@ -180,12 +180,12 @@ class Application:
 
     @log_execution
     def _student_report(self, sid):
-        student = self.student_service.students.get()
+        student = self.student_service.students.get(sid)
         if not student:
             print("Error: Student not found.")
             return
 
-        print(f"nName: {student.name}")
+        print(f"\nName: {student.name}")
         print(f"Major: {student.major}")
 
         gpa = self.grade_service.calculate_simple_gpa(sid)
@@ -193,7 +193,7 @@ class Application:
         print(f"Simple GPA: {gpa}")
         print(f"Weighted GPA: {wgpa}\n")
 
-        grades = self.grade_service.calculate_simple_gpa(sid)
+        grades = self.grade_service.get_student_grades(sid)
         print(f"{'Course':<10} {'Name':<23} {'Cr':<3} {'Score':<5} {'Grade'}")
         print("-" * 50)
         for g in grades:
@@ -357,7 +357,7 @@ class Application:
         else:
             print("Grade not found")
 
-    def _analytic_menu(self):
+    def _analytics_menu(self):
         while True:
             os.system('cls' if os.name=='nt' else 'clear')
             print("==== Analytics ===")
@@ -419,6 +419,7 @@ class Application:
                 self.pause()
             elif choice=="6":
                 path=input("File Path (default: data/export_grades.csv)") or "data/export_grades.csv"
+                self.report_service.export_grades_to_csv(path)
                 print(f"\nGrades exported to {path}\n")
                 self.pause()
             elif choice=="0":
