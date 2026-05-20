@@ -12,11 +12,9 @@ class TestModels(unittest.TestCase):
 
     def test_course_inheritance(self):
         c = Course("C1", "Math", 4, "Dr. Smith")
-        self.assertEqual(c.instructor, "Dr.Smith")
+        self.assertEqual(c.instructor, "Dr. Smith")
 
     def test_grade_logic(self):
         g = GradeRecord("s1","c1",85, "Good" )
         self.assertEqual(g.letter, "B")
         self.assertEqual(g.points, 3.0)
-
-

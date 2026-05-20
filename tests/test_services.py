@@ -22,5 +22,5 @@ class TestServices(unittest.TestCase):
         gpa = self.gs.calculate_simple_gpa("S1")
         self.assertEqual(gpa, 85.0)
 
-        wgpa = self.gs.calculate_simple_gpa("S1")
+        wgpa = (self.gs.calculate_weighted_gpa("S1"))
         self.assertEqual(wgpa, 88.3)

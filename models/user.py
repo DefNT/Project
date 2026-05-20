@@ -13,5 +13,4 @@ class Student(User):
       self.major=major
 
    def display_info(self):
-      return f"Student{self.name} (ID: {self.user_id}) - {self.major} - {self.email}"  
-        
+      return f"Student{self.name} (ID: {self.user_id}) - {self.major} - {self.email}"

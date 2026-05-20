@@ -49,7 +49,4 @@ class ReportService:
             writer = csv.writer(f)
             writer.writerow(["Student ID", "Course ID", "Score", "letter"])
             for g in self.grade_service.grades:
-                writer.writerow([g.user_id, g.course_id, g.score, g.letter])
-
-
-
+                writer.writerow([g.student_id, g.course_id, g.score, g.letter])

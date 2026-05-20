@@ -57,52 +57,53 @@ class Application:
             elif choice=="0":
                 self.save_data()
                 break    
-#Reading data 
+#Reading data
     def load_data(self):
-        try:
-            students=FileHandler.read_csv("data/students.csv")
-            for s in students:
-                try:
-                    self.student_service.add_student(
-                        s['student_id'],
-                        s['name'],
-                        s.get('email', ''),
-                        s.get('major', '')
-                    )
-                except Exception as e:
-                    pass
-        except FileNotFoundError:
-            pass
+            try:
+                students = FileHandler.read_csv("data/students.csv")
+                for s in students:
+                    try:
+                        sid = str(s['student_id']).strip()
+                        name = str(s['name']).strip()
+                        email = str(s.get('email', '')).strip()
+                        major = str(s.get('major', '')).strip()
 
-        try:
-            courses=FileHandler.read_csv("data/courses.csv")
-            for c in courses:
-                try:
-                    self.course_service.add_course(
-                        c['course_id'],
-                        c['name'],
-                        c['credits'],
-                        c.get('instructor', '')
-                    )
-                except Exception as e:
-                    pass    
-        except FileNotFoundError:
-            pass
+                        self.student_service.add_student(sid, name, email, major)
+                    except Exception as e:
+                        pass
+            except FileNotFoundError:
+                pass
 
-        try:
-            grades=FileHandler.read_csv("data/grades.csv")
-            for g in grades:
-                try:
-                    self.grade_service.assign_grade(
-                        g['student_id'],
-                        g['course_id'],
-                        g['score'],
-                        g.get('comment', '')
-                    )        
-                except Exception as e:
-                    pass
-        except FileNotFoundError:
-            pass            
+            try:
+                courses = FileHandler.read_csv("data/courses.csv")
+                for c in courses:
+                    try:
+                        cid = str(c['course_id']).strip()
+                        cname = str(c['name']).strip()
+                        credits = int(str(c['credits']).strip())
+                        instructor = str(c.get('instructor', '')).strip()
+
+                        self.course_service.add_course(cid, cname, credits, instructor)
+                    except Exception as e:
+                        pass
+            except FileNotFoundError:
+                pass
+
+            try:
+                grades = FileHandler.read_csv("data/grades.csv")
+                for g in grades:
+                    try:
+                        sid = str(g['student_id']).strip()
+                        cid = str(g['course_id']).strip()
+                        score = float(str(g['score']).strip())
+                        comment = str(g.get('comment', '')).strip()
+
+                        self.grade_service.assign_grade(sid, cid, score, comment)
+                    except Exception as e:
+                        pass
+            except FileNotFoundError:
+                pass
+
     #Saving Csv
     def save_data(self):
         students_data=[{"student_id": s.user_id, "name": s.name, "email": s.email, "major": s.major} for s in self.student_service.get_all()]
@@ -365,7 +366,7 @@ class Application:
             print("[2] Hall of Fame (Gpa>=90)")
             print("[3] Failing students")
             print("[4] Full report")
-            print("[5] Export report ro JSON")
+            print("[5] Export report to JSON")
             print("[6] Export grades to CSV")
             print("[0] Back\n")
             choice = input("Choice: ").strip()
