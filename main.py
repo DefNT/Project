@@ -296,7 +296,49 @@ class Application:
                     print(f"{i:<5} {s.name:<20} {s.major:<17} {g:.1f}")
                 print()
                 self.pause()
-            elif choice =="2":        
+            elif choice =="2":
+                print("\n== HALL OF FAME (Weighted GPA>=90) ===\n")
+                hof= self.report_service.get_hall_of_fame()
+                print(f"{'Name':<20} {'Major':<17} {'W.GPA'}")
+                print("-"*45)
+                for s,g in hof:
+                    print(f"{s.name:<20} {s.major:<17} {g:.1f}")
+                print()
+                self.pause()
+            elif choice == "3":
+                print("\n=== FAILING STUDENTS (GPA<60) ===\n")
+                fails = self.report_service.get_failing_students()
+                if not fails:
+                    print("No failing students")
+                else:
+                    for s,g in fails:
+                        print(f"{s.name} - GPA: {g:.1f}")
+                print()
+                self.pause()
+            elif choice == "4":
+                print("\n=== FULL REPORT ===\n")
+                rep = self.report_service.full_report()
+                print(f"Date: {rep['date']}")
+                print(f"Total students {rep['total_students']}")
+                print(f"Total courses: {rep['total_courses']}")
+                print(f"Average GPA: {rep['average_gpa']}")
+                print(f"Passing: {rep['passing']}")
+                print(f"Failing {rep['failing']}")
+                print(f"Hall of Fame: {rep['hof']} students")
+                print()
+                self.pause()
+            elif choice=="5":
+                path= input("File path(default data/report.json:)") or "data/report.json"
+                self.report_service.export_report_to_json(path)
+                print(f"\nReport saved to {path}\n")
+                self.pause()
+            elif choice=="6":
+                path=input("File Path (default: data/export_grades.csv)") or "data/export_grades.csv"
+                print(f"\nGrades exported to {path}\n")
+                self.pause()
+            elif choice=="0":
+                break
+                         
 
 
 if __name__=="__main__":
