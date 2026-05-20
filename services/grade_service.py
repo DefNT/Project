@@ -5,7 +5,7 @@ class GradeService:
         self.course_service = course_service
 
     def assign_grade(self,sid,cid,score, comment=""):
-        if score <= 0 or score >= 100:
+        if score < 0 or score > 100:
             raise ValueError("Score must be between 0 and 100")
         for g in self.grades:
             if g.student_id==sid and g.course_id==cid:
