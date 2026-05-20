@@ -1,7 +1,424 @@
 student_id,course_id,score,comment
-S1,CS101,95.0,
-S1,MATH101,88.0,
-S2,MATH101,70.0,
-S2,PHYS101,65.0,
-S3,PHYS101,92.0,
-S3,CS101,55.0,
+S1,CS202,68.4,Satisfactory
+S1,CS401,59.6,Excellent
+S1,FIN101,78.9,Poor
+S2,FIN101,71.0,Satisfactory
+S2,CS101,61.9,Poor
+S2,PHYS101,83.2,Excellent
+S3,PHYS101,71.3,Good
+S3,CS202,80.6,Satisfactory
+S3,FIN101,73.0,Needs Improvement
+S3,CS101,82.4,Poor
+S3,MATH201,79.4,Needs Improvement
+S4,CS401,91.3,Satisfactory
+S4,MATH101,61.1,Poor
+S4,PHYS101,87.4,Satisfactory
+S4,FIN101,90.6,Excellent
+S5,CS101,93.3,Satisfactory
+S5,MATH201,80.6,Excellent
+S5,CS301,83.3,Needs Improvement
+S5,MATH101,99.7,Needs Improvement
+S5,CS401,80.2,Excellent
+S6,CS401,80.6,Excellent
+S6,PHYS101,96.9,Poor
+S6,CS202,71.5,Poor
+S6,CS101,93.0,Excellent
+S6,MATH201,93.3,Satisfactory
+S7,MATH201,64.4,Satisfactory
+S7,CS401,54.0,Needs Improvement
+S7,CS101,95.5,Satisfactory
+S7,CS202,100.0,Poor
+S7,FIN101,69.0,Poor
+S8,FIN101,77.1,Excellent
+S8,CS202,96.8,Good
+S8,PHYS101,56.1,Needs Improvement
+S8,CS101,51.5,Poor
+S8,CS301,75.6,Excellent
+S9,PHYS101,90.6,Good
+S9,MATH101,99.1,Needs Improvement
+S9,CS301,59.2,Excellent
+S9,MATH201,82.4,Poor
+S10,CS401,68.0,Excellent
+S10,MATH101,97.3,Excellent
+S10,CS301,55.8,Excellent
+S10,CS101,68.3,Good
+S11,CS101,68.3,Excellent
+S11,MATH101,72.7,Poor
+S11,CS301,74.5,Needs Improvement
+S11,PHYS101,50.0,Poor
+S11,MATH201,83.0,Good
+S12,PHYS101,77.1,Excellent
+S12,FIN101,83.0,Satisfactory
+S12,CS301,66.6,Poor
+S12,MATH201,71.5,Satisfactory
+S13,CS101,61.6,Good
+S13,CS202,78.1,Needs Improvement
+S13,PHYS101,98.4,Excellent
+S14,FIN101,79.6,Poor
+S14,MATH201,53.2,Needs Improvement
+S14,PHYS101,88.2,Excellent
+S14,CS202,97.7,Satisfactory
+S14,MATH101,50.7,Satisfactory
+S15,CS301,86.7,Excellent
+S15,PHYS101,89.1,Excellent
+S15,CS101,96.5,Excellent
+S15,FIN101,67.3,Poor
+S16,CS202,89.0,Needs Improvement
+S16,CS101,91.4,Poor
+S16,FIN101,90.1,Poor
+S16,MATH101,87.7,Satisfactory
+S16,CS401,94.3,Needs Improvement
+S17,CS202,97.7,Excellent
+S17,MATH201,98.9,Needs Improvement
+S17,CS101,66.6,Needs Improvement
+S17,MATH101,52.3,Satisfactory
+S18,PHYS101,75.8,Good
+S18,CS202,95.4,Satisfactory
+S18,CS401,71.1,Excellent
+S18,CS101,91.9,Poor
+S19,MATH101,69.2,Good
+S19,CS401,73.8,Needs Improvement
+S19,PHYS101,60.0,Good
+S20,MATH201,52.4,Needs Improvement
+S20,FIN101,51.4,Poor
+S20,CS202,80.2,Poor
+S20,CS101,52.8,Poor
+S20,PHYS101,84.6,Good
+S21,FIN101,85.4,Satisfactory
+S21,PHYS101,66.9,Excellent
+S21,MATH101,80.3,Good
+S21,CS202,94.4,Excellent
+S22,CS301,92.4,Poor
+S22,CS401,69.5,Poor
+S22,CS202,54.0,Good
+S23,PHYS101,95.0,Satisfactory
+S23,FIN101,66.0,Excellent
+S23,CS401,85.4,Needs Improvement
+S23,CS202,76.4,Poor
+S23,MATH101,83.0,Good
+S24,PHYS101,66.6,Excellent
+S24,CS301,68.0,Good
+S24,MATH101,71.5,Good
+S24,CS202,97.0,Needs Improvement
+S24,CS101,77.2,Poor
+S25,PHYS101,96.6,Excellent
+S25,MATH201,82.9,Excellent
+S25,MATH101,62.2,Needs Improvement
+S25,CS301,66.9,Satisfactory
+S25,FIN101,53.2,Satisfactory
+S26,MATH101,97.5,Good
+S26,MATH201,89.2,Needs Improvement
+S26,CS202,60.2,Poor
+S26,CS401,92.6,Poor
+S27,PHYS101,82.1,Poor
+S27,FIN101,78.4,Needs Improvement
+S27,MATH101,53.7,Needs Improvement
+S27,CS301,90.4,Excellent
+S27,MATH201,86.0,Excellent
+S28,PHYS101,96.8,Poor
+S28,CS301,59.6,Good
+S28,FIN101,65.9,Satisfactory
+S28,CS202,76.5,Excellent
+S28,CS401,92.2,Poor
+S29,FIN101,64.3,Satisfactory
+S29,MATH101,79.5,Poor
+S29,CS101,97.0,Satisfactory
+S29,CS401,76.2,Satisfactory
+S29,CS202,85.8,Excellent
+S30,MATH101,80.2,Excellent
+S30,MATH201,97.3,Needs Improvement
+S30,PHYS101,80.1,Needs Improvement
+S30,FIN101,68.1,Good
+S31,MATH101,81.5,Excellent
+S31,CS401,78.5,Poor
+S31,CS202,59.8,Good
+S31,FIN101,67.7,Poor
+S32,CS401,56.9,Satisfactory
+S32,PHYS101,50.0,Satisfactory
+S32,MATH101,95.6,Satisfactory
+S32,CS202,79.6,Excellent
+S32,CS101,64.2,Satisfactory
+S33,MATH201,50.9,Satisfactory
+S33,PHYS101,75.4,Needs Improvement
+S33,CS401,75.7,Satisfactory
+S33,FIN101,67.1,Satisfactory
+S34,CS401,87.1,Poor
+S34,CS101,72.4,Satisfactory
+S34,MATH101,58.4,Needs Improvement
+S34,CS301,77.9,Satisfactory
+S34,PHYS101,92.2,Excellent
+S35,CS301,88.5,Satisfactory
+S35,CS202,61.1,Excellent
+S35,PHYS101,60.7,Poor
+S35,FIN101,59.0,Good
+S35,MATH101,76.6,Needs Improvement
+S36,PHYS101,61.4,Needs Improvement
+S36,FIN101,52.0,Satisfactory
+S36,CS401,58.2,Poor
+S36,CS101,51.3,Excellent
+S37,MATH101,96.1,Excellent
+S37,CS401,76.8,Needs Improvement
+S37,MATH201,79.1,Needs Improvement
+S37,CS301,53.8,Excellent
+S37,FIN101,60.0,Good
+S38,MATH201,97.0,Good
+S38,PHYS101,73.9,Satisfactory
+S38,FIN101,66.1,Poor
+S38,CS401,56.3,Satisfactory
+S38,CS101,53.0,Poor
+S39,PHYS101,73.5,Satisfactory
+S39,CS401,58.0,Good
+S39,MATH101,60.0,Needs Improvement
+S39,MATH201,57.3,Excellent
+S39,FIN101,94.6,Good
+S40,CS401,76.2,Excellent
+S40,PHYS101,60.3,Excellent
+S40,CS202,61.8,Poor
+S40,MATH201,65.5,Needs Improvement
+S41,PHYS101,90.6,Needs Improvement
+S41,CS101,92.9,Poor
+S41,CS301,58.4,Needs Improvement
+S41,CS401,86.2,Satisfactory
+S41,CS202,86.4,Good
+S42,MATH101,52.9,Poor
+S42,CS401,66.3,Needs Improvement
+S42,CS301,97.9,Good
+S43,PHYS101,54.3,Needs Improvement
+S43,CS401,68.5,Needs Improvement
+S43,MATH101,53.2,Needs Improvement
+S43,CS301,84.1,Excellent
+S44,PHYS101,67.0,Excellent
+S44,CS301,88.0,Needs Improvement
+S44,MATH101,89.1,Poor
+S44,CS202,99.5,Good
+S44,FIN101,84.8,Satisfactory
+S45,CS301,81.0,Good
+S45,FIN101,72.2,Good
+S45,PHYS101,65.5,Poor
+S45,CS401,69.2,Excellent
+S45,CS202,85.3,Poor
+S46,CS202,75.0,Poor
+S46,CS401,79.3,Satisfactory
+S46,PHYS101,67.5,Satisfactory
+S46,MATH201,86.2,Poor
+S46,CS101,70.3,Satisfactory
+S47,CS101,95.4,Poor
+S47,CS202,87.7,Good
+S47,CS301,91.9,Good
+S48,CS401,63.0,Excellent
+S48,PHYS101,72.0,Needs Improvement
+S48,CS101,58.9,Poor
+S48,MATH101,82.7,Poor
+S48,CS202,63.8,Satisfactory
+S49,MATH201,51.3,Satisfactory
+S49,CS401,52.9,Satisfactory
+S49,PHYS101,82.8,Excellent
+S49,CS202,67.9,Satisfactory
+S49,CS301,50.2,Poor
+S50,CS401,96.5,Good
+S50,MATH201,81.6,Satisfactory
+S50,CS101,59.3,Good
+S50,CS202,99.8,Poor
+S51,CS301,94.1,Excellent
+S51,PHYS101,74.6,Needs Improvement
+S51,CS101,79.8,Needs Improvement
+S51,MATH201,69.8,Needs Improvement
+S52,CS301,60.3,Poor
+S52,FIN101,70.1,Good
+S52,CS101,90.1,Excellent
+S53,PHYS101,89.4,Satisfactory
+S53,FIN101,94.2,Satisfactory
+S53,CS401,71.1,Satisfactory
+S54,PHYS101,82.7,Satisfactory
+S54,CS401,90.4,Satisfactory
+S54,CS301,81.7,Good
+S54,FIN101,56.3,Good
+S55,MATH101,90.4,Excellent
+S55,FIN101,54.9,Needs Improvement
+S55,CS202,62.0,Needs Improvement
+S55,CS101,54.3,Good
+S55,CS401,66.7,Poor
+S56,MATH101,89.8,Poor
+S56,FIN101,50.6,Excellent
+S56,MATH201,73.5,Poor
+S56,PHYS101,70.2,Satisfactory
+S57,CS401,75.7,Satisfactory
+S57,PHYS101,82.6,Excellent
+S57,MATH101,53.4,Good
+S57,CS101,88.3,Poor
+S58,PHYS101,75.2,Poor
+S58,CS301,80.0,Poor
+S58,CS101,90.1,Excellent
+S58,MATH101,65.5,Poor
+S58,FIN101,50.9,Good
+S59,MATH201,86.0,Needs Improvement
+S59,CS101,58.1,Poor
+S59,MATH101,84.6,Needs Improvement
+S60,MATH201,99.2,Excellent
+S60,PHYS101,66.1,Excellent
+S60,MATH101,97.3,Good
+S60,FIN101,67.3,Excellent
+S61,CS301,73.0,Satisfactory
+S61,CS401,78.7,Excellent
+S61,MATH101,86.4,Good
+S61,CS101,68.0,Satisfactory
+S61,MATH201,58.4,Poor
+S62,FIN101,91.3,Good
+S62,CS401,91.9,Poor
+S62,CS301,83.3,Good
+S63,PHYS101,59.8,Needs Improvement
+S63,FIN101,86.7,Satisfactory
+S63,MATH101,52.9,Needs Improvement
+S64,MATH101,85.7,Poor
+S64,CS101,58.7,Excellent
+S64,CS301,69.0,Satisfactory
+S64,CS202,66.5,Excellent
+S65,FIN101,99.7,Excellent
+S65,MATH201,86.8,Good
+S65,PHYS101,58.5,Excellent
+S65,CS301,86.0,Satisfactory
+S66,CS202,87.9,Excellent
+S66,MATH201,67.8,Good
+S66,CS301,96.9,Needs Improvement
+S67,CS101,74.5,Poor
+S67,PHYS101,65.2,Poor
+S67,MATH201,89.1,Poor
+S67,FIN101,77.0,Needs Improvement
+S68,CS301,88.4,Excellent
+S68,MATH201,93.3,Satisfactory
+S68,MATH101,61.0,Satisfactory
+S69,CS301,51.3,Poor
+S69,MATH201,99.9,Satisfactory
+S69,CS401,84.8,Satisfactory
+S69,FIN101,67.5,Poor
+S70,CS101,99.9,Needs Improvement
+S70,FIN101,67.6,Needs Improvement
+S70,CS401,60.2,Poor
+S70,MATH101,85.8,Excellent
+S71,PHYS101,71.1,Good
+S71,MATH101,74.4,Excellent
+S71,CS202,78.0,Needs Improvement
+S71,MATH201,88.4,Needs Improvement
+S71,CS101,87.8,Poor
+S72,CS301,62.3,Satisfactory
+S72,MATH201,78.1,Needs Improvement
+S72,MATH101,75.8,Excellent
+S73,FIN101,84.8,Needs Improvement
+S73,MATH201,89.8,Good
+S73,CS101,88.5,Satisfactory
+S73,MATH101,55.1,Needs Improvement
+S73,CS202,56.3,Satisfactory
+S74,MATH101,62.1,Poor
+S74,FIN101,74.9,Poor
+S74,PHYS101,88.7,Poor
+S74,CS101,60.6,Excellent
+S74,CS301,97.1,Good
+S75,CS101,74.8,Needs Improvement
+S75,MATH201,60.9,Poor
+S75,CS202,73.6,Needs Improvement
+S76,MATH201,63.1,Good
+S76,PHYS101,93.8,Excellent
+S76,MATH101,52.1,Satisfactory
+S76,CS301,94.2,Needs Improvement
+S77,MATH201,73.6,Satisfactory
+S77,CS101,50.0,Satisfactory
+S77,CS301,83.5,Excellent
+S77,CS401,75.8,Good
+S77,CS202,58.4,Poor
+S78,PHYS101,72.3,Needs Improvement
+S78,CS301,98.1,Good
+S78,FIN101,77.6,Good
+S78,MATH101,57.9,Needs Improvement
+S79,MATH201,53.2,Excellent
+S79,FIN101,71.4,Poor
+S79,CS101,52.6,Satisfactory
+S80,CS301,50.2,Poor
+S80,MATH201,71.8,Excellent
+S80,PHYS101,73.6,Excellent
+S81,PHYS101,88.5,Satisfactory
+S81,CS101,71.6,Poor
+S81,CS202,76.9,Excellent
+S81,FIN101,87.0,Needs Improvement
+S82,FIN101,68.1,Good
+S82,CS202,95.7,Good
+S82,CS301,68.6,Excellent
+S82,CS401,81.6,Needs Improvement
+S83,MATH101,56.4,Poor
+S83,CS202,73.6,Satisfactory
+S83,CS301,75.8,Needs Improvement
+S83,CS401,68.4,Needs Improvement
+S83,PHYS101,52.7,Excellent
+S84,MATH201,82.8,Satisfactory
+S84,CS101,61.6,Good
+S84,MATH101,89.0,Excellent
+S84,CS401,71.1,Poor
+S85,CS202,93.6,Good
+S85,MATH201,81.8,Excellent
+S85,MATH101,64.6,Needs Improvement
+S85,CS401,98.3,Poor
+S86,PHYS101,79.9,Poor
+S86,FIN101,70.2,Needs Improvement
+S86,CS301,80.6,Satisfactory
+S87,FIN101,59.8,Excellent
+S87,PHYS101,77.3,Needs Improvement
+S87,CS202,74.4,Needs Improvement
+S87,MATH101,50.1,Good
+S87,CS301,60.1,Needs Improvement
+S88,MATH201,53.0,Good
+S88,PHYS101,62.5,Poor
+S88,CS202,91.6,Satisfactory
+S88,FIN101,84.8,Needs Improvement
+S88,CS301,56.9,Poor
+S89,CS301,65.1,Needs Improvement
+S89,FIN101,93.9,Good
+S89,MATH101,89.8,Excellent
+S89,MATH201,64.0,Needs Improvement
+S89,CS101,69.3,Needs Improvement
+S90,CS202,80.2,Poor
+S90,CS401,66.5,Poor
+S90,MATH201,83.1,Needs Improvement
+S91,CS202,91.2,Excellent
+S91,CS301,70.6,Good
+S91,PHYS101,52.3,Needs Improvement
+S92,CS101,93.7,Poor
+S92,CS202,87.5,Poor
+S92,MATH101,73.2,Satisfactory
+S92,CS401,73.0,Poor
+S93,MATH201,74.4,Needs Improvement
+S93,CS401,93.5,Satisfactory
+S93,PHYS101,51.2,Good
+S94,MATH101,58.2,Excellent
+S94,CS401,54.5,Needs Improvement
+S94,PHYS101,77.7,Needs Improvement
+S94,CS301,94.8,Good
+S94,CS202,74.3,Poor
+S95,CS301,99.9,Excellent
+S95,CS401,55.1,Satisfactory
+S95,CS202,51.6,Good
+S95,MATH101,52.5,Poor
+S95,CS101,78.8,Poor
+S96,CS301,90.7,Poor
+S96,CS101,50.3,Good
+S96,FIN101,90.1,Satisfactory
+S96,MATH201,59.8,Poor
+S96,PHYS101,96.1,Satisfactory
+S97,MATH201,79.6,Poor
+S97,CS101,79.5,Good
+S97,CS301,63.6,Good
+S97,CS401,61.7,Poor
+S97,MATH101,66.0,Excellent
+S98,CS101,57.9,Good
+S98,MATH201,61.7,Excellent
+S98,MATH101,96.2,Poor
+S98,CS401,95.8,Excellent
+S98,PHYS101,69.3,Excellent
+S99,MATH201,60.6,Excellent
+S99,CS301,99.7,Poor
+S99,CS401,91.5,Satisfactory
+S99,MATH101,71.1,Good
+S99,CS101,63.5,Needs Improvement
+S100,CS101,66.3,Excellent
+S100,PHYS101,63.5,Satisfactory
+S100,MATH101,81.6,Excellent
+S100,CS202,54.1,Good
+S100,CS401,86.5,Satisfactory

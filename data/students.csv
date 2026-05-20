@@ -1,4 +1,101 @@
 student_id,name,email,major
-S1,Alice,,Computer Science
-S2,Bob,,Mathematics
-S3,Charlie,,Physics
+S1,Student_1,student1@university.edu,Physics
+S2,Student_2,student2@university.edu,Mathematics
+S3,Student_3,student3@university.edu,Physics
+S4,Student_4,student4@university.edu,FinTech
+S5,Student_5,student5@university.edu,Mathematics
+S6,Student_6,student6@university.edu,Physics
+S7,Student_7,student7@university.edu,Mathematics
+S8,Student_8,student8@university.edu,FinTech
+S9,Student_9,student9@university.edu,Software Engineering
+S10,Student_10,student10@university.edu,FinTech
+S11,Student_11,student11@university.edu,Mathematics
+S12,Student_12,student12@university.edu,Mathematics
+S13,Student_13,student13@university.edu,Mathematics
+S14,Student_14,student14@university.edu,FinTech
+S15,Student_15,student15@university.edu,Physics
+S16,Student_16,student16@university.edu,Software Engineering
+S17,Student_17,student17@university.edu,Physics
+S18,Student_18,student18@university.edu,FinTech
+S19,Student_19,student19@university.edu,Software Engineering
+S20,Student_20,student20@university.edu,Computer Science
+S21,Student_21,student21@university.edu,Physics
+S22,Student_22,student22@university.edu,Mathematics
+S23,Student_23,student23@university.edu,FinTech
+S24,Student_24,student24@university.edu,Software Engineering
+S25,Student_25,student25@university.edu,Physics
+S26,Student_26,student26@university.edu,FinTech
+S27,Student_27,student27@university.edu,Software Engineering
+S28,Student_28,student28@university.edu,FinTech
+S29,Student_29,student29@university.edu,Software Engineering
+S30,Student_30,student30@university.edu,Physics
+S31,Student_31,student31@university.edu,FinTech
+S32,Student_32,student32@university.edu,FinTech
+S33,Student_33,student33@university.edu,Mathematics
+S34,Student_34,student34@university.edu,Computer Science
+S35,Student_35,student35@university.edu,Mathematics
+S36,Student_36,student36@university.edu,Physics
+S37,Student_37,student37@university.edu,Software Engineering
+S38,Student_38,student38@university.edu,Computer Science
+S39,Student_39,student39@university.edu,FinTech
+S40,Student_40,student40@university.edu,Computer Science
+S41,Student_41,student41@university.edu,FinTech
+S42,Student_42,student42@university.edu,Software Engineering
+S43,Student_43,student43@university.edu,FinTech
+S44,Student_44,student44@university.edu,Mathematics
+S45,Student_45,student45@university.edu,Software Engineering
+S46,Student_46,student46@university.edu,Software Engineering
+S47,Student_47,student47@university.edu,Software Engineering
+S48,Student_48,student48@university.edu,FinTech
+S49,Student_49,student49@university.edu,Computer Science
+S50,Student_50,student50@university.edu,FinTech
+S51,Student_51,student51@university.edu,Computer Science
+S52,Student_52,student52@university.edu,Physics
+S53,Student_53,student53@university.edu,Physics
+S54,Student_54,student54@university.edu,Software Engineering
+S55,Student_55,student55@university.edu,Mathematics
+S56,Student_56,student56@university.edu,Physics
+S57,Student_57,student57@university.edu,Computer Science
+S58,Student_58,student58@university.edu,Mathematics
+S59,Student_59,student59@university.edu,Computer Science
+S60,Student_60,student60@university.edu,Computer Science
+S61,Student_61,student61@university.edu,Computer Science
+S62,Student_62,student62@university.edu,FinTech
+S63,Student_63,student63@university.edu,FinTech
+S64,Student_64,student64@university.edu,FinTech
+S65,Student_65,student65@university.edu,FinTech
+S66,Student_66,student66@university.edu,FinTech
+S67,Student_67,student67@university.edu,FinTech
+S68,Student_68,student68@university.edu,Computer Science
+S69,Student_69,student69@university.edu,Computer Science
+S70,Student_70,student70@university.edu,FinTech
+S71,Student_71,student71@university.edu,Computer Science
+S72,Student_72,student72@university.edu,Software Engineering
+S73,Student_73,student73@university.edu,Mathematics
+S74,Student_74,student74@university.edu,FinTech
+S75,Student_75,student75@university.edu,Mathematics
+S76,Student_76,student76@university.edu,Computer Science
+S77,Student_77,student77@university.edu,Physics
+S78,Student_78,student78@university.edu,Physics
+S79,Student_79,student79@university.edu,Physics
+S80,Student_80,student80@university.edu,FinTech
+S81,Student_81,student81@university.edu,FinTech
+S82,Student_82,student82@university.edu,FinTech
+S83,Student_83,student83@university.edu,Software Engineering
+S84,Student_84,student84@university.edu,Computer Science
+S85,Student_85,student85@university.edu,Software Engineering
+S86,Student_86,student86@university.edu,Software Engineering
+S87,Student_87,student87@university.edu,Computer Science
+S88,Student_88,student88@university.edu,Mathematics
+S89,Student_89,student89@university.edu,Software Engineering
+S90,Student_90,student90@university.edu,FinTech
+S91,Student_91,student91@university.edu,Physics
+S92,Student_92,student92@university.edu,Physics
+S93,Student_93,student93@university.edu,Mathematics
+S94,Student_94,student94@university.edu,Mathematics
+S95,Student_95,student95@university.edu,Physics
+S96,Student_96,student96@university.edu,Software Engineering
+S97,Student_97,student97@university.edu,Computer Science
+S98,Student_98,student98@university.edu,Physics
+S99,Student_99,student99@university.edu,Computer Science
+S100,Student_100,student100@university.edu,FinTech

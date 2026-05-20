@@ -1,4 +1,9 @@
 course_id,name,credits,instructor
-MATH101,Calculus I,4,
-CS101,Intro to Programming,3,
-PHYS101,General Physics,4,
+MATH101,Calculus I,4,Dr. Smith
+CS101,Intro to Programming,3,Dr. Jones
+PHYS101,General Physics,4,Dr. Brown
+CS202,Data Structures,3,Dr. White
+FIN101,Intro to FinTech,3,Dr. Black
+CS301,Operating Systems,4,Dr. Green
+MATH201,Linear Algebra,4,Dr. Grey
+CS401,Blockchain Tech,3,Dr. Silver
