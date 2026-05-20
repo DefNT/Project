@@ -272,6 +272,91 @@ class Application:
         for g in grades: dist[g.letter] += 1
         print(f"Distribution: A:{dist['A']} B:{dist['B']} C:{dist['C']} D:{dist['D']} F:{dist['F']}")
 
+    def _grade_menu(self):
+        while True:
+            os.system('cls' if os.name == 'nt' else 'clear')
+            print("GRADES")
+            print("1. Assign grade")
+            print("2. Update grade")
+            print("3. Delete grade")
+            print("0. Back")
+
+            choice = input("Choice:")
+            if choice == "1":
+                print("Assign grade")
+                sid = input("Student ID: ")
+                cid = input("Course code: ")
+                score = input ("Score (0-100): ")
+                comment = input ("Comment (optional): ")
+                valid, val = validate_score(score)
+                if valid:
+                    self._do_assign(sid,cid,val,comment)
+                else:
+                    print("Invalid score.")
+                print()
+                self.pause()
+
+            elif choice == "2":
+                print("Update grade")
+                sid = input("Student ID: ")
+                cid = input("Course code: ")
+                score = input("New score (0-100): ")
+                valid, val = validate_score(score)
+                if valid:
+                    self._do_update(sid,cid,val)
+                else:
+                    print("Invalid score.")
+                print()
+                self.pause()
+
+            elif choice == "3":
+                print("Delete grade")
+                sid = input("Student ID: ")
+                cid = input("Course code: ")
+
+                if self.grade_service.delete_grade(sid, cid):
+                    print("Grade deleted")
+                else:
+                    print("Grade not found")
+                print()
+                self.pause()
+
+            elif choice == "0":
+                    break
+
+    @log_execution
+    def _do_assign(self,sid,cid,val, comment):
+        if sid not in self.student_service.students:
+            print("Error: Student not found")
+            return
+        if cid not in self.course_service.courses:
+            print("Error: Course not found")
+            return
+
+        try:
+            self.grade_service.assign_grade(sid, cid, val, comment)
+            g = next(
+                g for g in self.grade_service.grades
+                if g.student_id == sid and g.course_id == cid
+            )
+            print(f"Grade assigned: {cid}: {val}/100 ({g.letter})")
+        except Exception as e:
+            print(f"Error: {e}")
+
+    @log_execution
+    def _do_update(self, sid, cid, val):
+        if sid not in self.student_service.students or cid not in self.course_service.courses:
+            print("Error: Student or Course are not found")
+            return
+        if self.grade_service.update_grade(sid,cid,val):
+            g = next(
+                g for g in self.grade_service.grades
+                if g.student_id == sid and g.course_id == cid
+            )
+            print (f"Grade updated: {cid}: {val}/100 ({g.letter})")
+        else:
+            print("Grade not found")
+
     def _analytic_menu(self):
         while True:
             os.system('cls' if os.name=='nt' else 'clear')
