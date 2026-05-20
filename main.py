@@ -375,7 +375,7 @@ class Application:
                 limit_str = input("How many? (default 5):")
                 limit = int(limit_str) if limit_str.isdigit() else 5
                 top =self.report_service.get_top_students(limit)
-                print(f"\n{'Rank':<5 } {'Name':<20} {'Major':<17} {'W.GPA'}")
+                print(f"\n{'Rank':<5} {'Name':<20} {'Major':<17} {'W.GPA'}")
                 print("-" *50)
                 for i, (s,g) in enumerate(top, 1):
                     print(f"{i:<5} {s.name:<20} {s.major:<17} {g:.1f}")
@@ -414,12 +414,12 @@ class Application:
                 self.pause()
             elif choice=="5":
                 path= input("File path(default data/report.json:)") or "data/report.json"
-                self.report_service.export_report_to_json(path)
+                self.report_service.export_report_json(path)
                 print(f"\nReport saved to {path}\n")
                 self.pause()
             elif choice=="6":
                 path=input("File Path (default: data/export_grades.csv)") or "data/export_grades.csv"
-                self.report_service.export_grades_to_csv(path)
+                self.report_service.export_grades_csv(path)
                 print(f"\nGrades exported to {path}\n")
                 self.pause()
             elif choice=="0":
